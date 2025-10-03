@@ -12,6 +12,7 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import org.samsepiol.nmrca.network.NetworkHandler;
 
 /**
  * No More Recipe Conflicts Again (NMRCA)
@@ -39,8 +40,14 @@ public class NOMORERECIPECONFLICTAGAIN {
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
+        LOGGER.info("NMRCA Common Setup Starting");
+        
+        // Register network packets
+        event.enqueueWork(() -> {
+            NetworkHandler.register();
+        });
+        
         LOGGER.info("NMRCA Common Setup Complete");
-        // Common setup will be added here
     }
     
     private void clientSetup(FMLClientSetupEvent event) {
