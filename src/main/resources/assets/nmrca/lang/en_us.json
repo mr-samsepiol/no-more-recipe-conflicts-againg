@@ -1,0 +1,13 @@
+{
+  "itemGroup.nmrca": "Example Mod Tab",
+  "block.nmrca.example_block": "Example Block",
+  "item.nmrca.example_item": "Example Item",
+
+  "nmrca.configuration.title": "NO MORE RECIPE CONFLICT AGAIN? Configs",
+  "nmrca.configuration.section.nmrca.common.toml": "NO MORE RECIPE CONFLICT AGAIN? Configs",
+  "nmrca.configuration.section.nmrca.common.toml.title": "NO MORE RECIPE CONFLICT AGAIN? Configs",
+  "nmrca.configuration.items": "Item List",
+  "nmrca.configuration.logDirtBlock": "Log Dirt Block",
+  "nmrca.configuration.magicNumberIntroduction": "Magic Number Text",
+  "nmrca.configuration.magicNumber": "Magic Number"
+}
